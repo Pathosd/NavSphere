@@ -12,7 +12,8 @@ import { Container } from '@/components/ui/container'
 async function getData() {
   try {
     // 使用绝对 URL，确保构建时可以访问
-    const baseUrl = process.env.NEXT_PUBLIC_API_URL
+    // const baseUrl = process.env.NEXT_PUBLIC_API_URL
+    const baseUrl = "https://dh.leti.ltd"
     console.log('Building with base URL:', baseUrl) // 添加构建日志
 
     const [navigationRes, siteRes] = await Promise.all([
